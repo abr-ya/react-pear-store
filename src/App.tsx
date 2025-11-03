@@ -8,6 +8,7 @@ const App = () => {
       <a href="https://react.dev" target="_blank">
         <img src={reactLogo} alt="React logo" />
       </a>
+      <i className="bx bx-volleyball text-4xl text-green-500"></i>
     </div>
   );
 };
