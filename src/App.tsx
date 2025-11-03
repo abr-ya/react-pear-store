@@ -1,14 +1,22 @@
-import reactLogo from "./assets/react.svg";
-import "./app.css";
+import { useState } from "react";
+import { Controls } from "./components";
 
 const App = () => {
+  const [isFrameZoomed, setIsFrameZoomed] = useState(false);
+
+  const toggleFrameZoom = () => {
+    setIsFrameZoomed((prev) => !prev);
+  };
+
   return (
-    <div>
-      <h1 className="text-3xl font-bold text-amber-300">Hello, world!</h1>
-      <a href="https://react.dev" target="_blank">
-        <img src={reactLogo} alt="React logo" />
-      </a>
-      <i className="bx bx-volleyball text-4xl text-green-500"></i>
+    <div className="w-full h-screen grid place-items-center">
+      <div
+        className={`${isFrameZoomed && "min-w-[97vw] min-h-[97vh]"}
+        w-[70vw] h-[85vh] min-w-[70vw] max-w-[90vw] min-h-[85vh]
+        border border-gray-300 rounded-2xl resize relative transition-all duration-500`}
+      >
+        <Controls zoomHandler={toggleFrameZoom} isZoomed={isFrameZoomed} />
+      </div>
     </div>
   );
 };
