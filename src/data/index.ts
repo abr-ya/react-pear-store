@@ -31,7 +31,7 @@ export const navItems = [
   },
 ];
 
-export const items = [
+export const homePageItems = [
   { label: "iPhone", img: "items/iphone.jpg", pageIndex: 1 },
   { label: "MacBook", img: "items/macbook.jpg", pageIndex: 2 },
   { label: "Smart Watch", img: "items/watch.jpg", pageIndex: 3 },
