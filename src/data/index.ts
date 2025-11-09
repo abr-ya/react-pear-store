@@ -37,3 +37,24 @@ export const homePageItems = [
   { label: "Smart Watch", img: "items/watch.jpg", pageIndex: 3 },
   { label: "iMac", img: "items/imac.png", pageIndex: 4 },
 ];
+
+export const iphoneModels = [
+  {
+    name: "iPhone 16 Pro Max",
+    description: "The ultimate iPhone.",
+    price: "From $1,099",
+    img: "iphone/iphone16-pro-max.png",
+  },
+  {
+    name: "iPhone 16 Plus",
+    description: "A total powerhouse.",
+    price: "From $799",
+    img: "iphone/iphone16-plus.png",
+  },
+  {
+    name: "iPhone 16",
+    description: "As amazing as ever.",
+    price: "From $799",
+    img: "iphone/iphone16.png",
+  },
+];
