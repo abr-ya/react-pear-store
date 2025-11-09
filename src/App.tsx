@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Controls, Navbar } from "./components";
-import { Home } from "./pages";
+import { Home, IPhone, MacBook, Watch } from "./pages";
 
 const App = () => {
   const [isFrameZoomed, setIsFrameZoomed] = useState(false);
@@ -23,11 +23,11 @@ const App = () => {
       >
         <Navbar activePage={activePage} onNavClick={handleNavClick} />
         <Controls zoomHandler={toggleFrameZoom} isZoomed={isFrameZoomed} />
-        <div className="grow rounded-r-2xl">
-          {activePage === 0 && <Home />}
-          {activePage === 1 && <div>IPhone Page Content</div>}
-          {activePage === 2 && <div>MacBook Page Content</div>}
-          {activePage === 3 && <div>Watch Page Content</div>}
+        <div className="grow rounded-r-2xl overflow-hidden">
+          {activePage === 0 && <Home setActivePage={setActivePage} />}
+          {activePage === 1 && <IPhone />}
+          {activePage === 2 && <MacBook />}
+          {activePage === 3 && <Watch />}
         </div>
       </div>
     </div>

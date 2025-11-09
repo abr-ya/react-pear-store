@@ -4,7 +4,7 @@ interface ControlsProps {
 }
 
 export const Controls = ({ zoomHandler, isZoomed }: ControlsProps) => (
-  <div className="absolute top-3 right-3 flex gap-2">
+  <div className="absolute top-3 right-3 flex gap-2 z-50">
     <button className="text-2xl text-pink-400 cursor-pointer" onClick={zoomHandler}>
       <i className={`bxr bx-search-${isZoomed ? "minus" : "plus"}`}></i>
     </button>
