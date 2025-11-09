@@ -23,7 +23,7 @@ const App = () => {
       >
         <Navbar activePage={activePage} onNavClick={handleNavClick} />
         <Controls zoomHandler={toggleFrameZoom} isZoomed={isFrameZoomed} />
-        <div className="grow">
+        <div className="grow rounded-r-2xl">
           {activePage === 0 && <Home />}
           {activePage === 1 && <div>IPhone Page Content</div>}
           {activePage === 2 && <div>MacBook Page Content</div>}
