@@ -86,3 +86,24 @@ export const macbookModels = [
     icon: "macbook/apple-m3-icon.png",
   },
 ];
+
+export const watchModels = [
+  {
+    imgs: ["watch/watch10-side.png", "watch/watch10.png"],
+    name: "Apple Watch Series 10",
+    price: "From $399",
+    desc: ["45mm or 41mm case size", "50m water resistant", "Swimproof"],
+  },
+  {
+    imgs: ["watch/watch-hermes-side.png", "watch/watch-hermes.png"],
+    name: "Apple Watch Hermes",
+    price: "From $1,149",
+    desc: ["44mm or 40mm case size", "50m water resistant", "Swimproof"],
+  },
+  {
+    imgs: ["watch/watch-se-side.png", "watch/watche-se.png"],
+    name: "Apple Watch Se",
+    price: "From $249",
+    desc: ["44mm case size", "10m water resistant", "Swimproof"],
+  },
+];

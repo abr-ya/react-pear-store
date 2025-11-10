@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { macbookModels } from "../data";
+import { PageHeader } from "../components";
 
 export const MacBook = () => {
   const [chip, setChip] = useState(macbookModels[0].chip);
@@ -15,7 +16,7 @@ export const MacBook = () => {
 
   return (
     <div className="w-full flex flex-col items-center justify-around bg-white p-8">
-      <h1 className="2xl:text-4xl xl:text-3xl md:text-2xl font-semibold text-gray-800 mb-8">MacBook Models</h1>
+      <PageHeader title="MacBook Models" />
       <div className="flex">
         {macbookModels.map((model, index) => (
           <button
@@ -36,7 +37,7 @@ export const MacBook = () => {
           <img
             src={currentColor?.img}
             alt={`MacBook Air with ${chip} chip`}
-            className="2xl:w-72 w-48 h-full object-contain m-[auto]"
+            className="2xl:w-72 w-48 h-full object-contain m-auto"
             draggable={false}
           />
           <span className="2xl:text-lg text-sm font-medium text-gray-800 text-center">{currentColor?.label}</span>
@@ -56,7 +57,7 @@ export const MacBook = () => {
           {/* Specs */}
           <ul className="2xl:mb-4 xl:mb-2 text-center md:text-left">
             {currentMb?.specs.map((spec) => (
-              <li key={spec} className="2xl:text-lg xl:text-base md:text-sm text-sm font-medium text-gray-800">
+              <li key={spec} className="2xl:text-lg xl:text-base text-sm font-medium text-gray-800">
                 {spec}
               </li>
             ))}
